@@ -20,7 +20,7 @@ export class LoginPage {
     // For example, checking hardcoded credentials (for demonstration purposes)
     if (this.username === 'user' && this.password === 'password') {
       // Navigate to the home page
-      this.router.navigate(['/home']);
+      this.router.navigate(['/home.page.html']);
     } else {
       // Handle invalid credentials
       console.log('Invalid credentials');
