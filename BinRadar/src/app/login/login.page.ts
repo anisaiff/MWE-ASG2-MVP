@@ -26,4 +26,8 @@ export class LoginPage {
       console.log('Invalid credentials');
     }
   }
+
+  goToSignUp() {
+    this.router.navigateByUrl('/signup');
+  }
 }
