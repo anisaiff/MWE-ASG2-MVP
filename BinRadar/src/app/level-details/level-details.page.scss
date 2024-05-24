@@ -1,0 +1,75 @@
+page-home {
+    background-color: #f5f5f5; /* Light gray background */
+  }
+
+  ion-header {
+    background-color: #fff; /* White background */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 10px;
+  }
+  
+  ion-toolbar {
+    justify-content: space-between; /* Align elements horizontally */
+  }
+  
+  ion-buttons {
+    display: flex; /* Allow buttons to stack horizontally */
+  }
+  ion-buttons:first-child { /* Target the first ion-buttons element */
+    width: 30%; /* Allocate space for the logo */
+  }
+  
+  ion-img {
+    width: 100%; /* Stretch image to fit the available space */
+  }
+  ion-searchbar {
+    width: 100%; /* Stretch search bar to fill the remaining space */
+    background-color: #e0e0e0; /* Light gray background */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Add some padding for text */
+  }
+
+  ion-buttons:last-child { /* Target the last ion-buttons element */
+    width: 10px; /* Allocate minimal space for the button */
+  }
+
+  ion-content {
+    padding: 10px; /* Add padding around the content */
+  }
+  
+  ion-list {
+    margin: 0; /* Remove default margin */
+  }
+
+  ion-content {
+    padding: 10px; /* Add padding around the content */
+  }
+  
+  ion-list {
+    margin: 0; /* Remove default margin */
+  }
+
+  ion-item {
+    --background: #fff; /* White background for list items */
+    --border-width: 0; /* Remove default border */
+    padding: 15px; /* Add padding for content */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for each item */
+  }
+  
+  .list-item-text { /* Assuming a class for list item text */
+    font-weight: bold; /* Bold text */
+    font-size: 16px; /* Adjust font size as needed */
+  }
+  
+  .list-item-subtext { /* Assuming a class for list item subtext */
+    font-size: 14px; /* Smaller font size for subtext */
+    color: #808080; /* Gray color for subtext */
+  }
+
+  .detailed-page-text {
+    font-size: 14px;
+    color: #4A4A4A; /* Light gray text color */
+    margin-top: 10px; /* Add some space above the text */
+  }
+  
+  
