@@ -1,13 +1,17 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>level-list</ion-title>
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Levels</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">level-list</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let level of levels">
+      <ion-label>{{ level.title }}</ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>
+
+<ion-item *ngFor="let level of levels" (click)="navigateToDetails(level)">
+  <ion-label>{{ level.title }}</ion-label>
+</ion-item>

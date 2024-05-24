@@ -13,6 +13,14 @@ const routes: Routes = [
     path: 'level-list',
     loadChildren: () => import('./level-list/level-list.module').then( m => m.LevelListPageModule)
   },
+  {
+    path: 'level-details',
+    loadChildren: () => import('./level-details/level-details.module').then( m => m.LevelDetailsPageModule)
+  },
+  {
+    path: 'profile',
+    loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
+  },
 ];
 
 @NgModule({
