@@ -1,3 +1,25 @@
-<ion-app>
-  <ion-router-outlet></ion-router-outlet>
-</ion-app>
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="login-container">
+    <h1>Hello, welcome!</h1>
+    <div class="login-box">
+      <ion-icon name="person-circle-outline"></ion-icon>
+      <h2>Login</h2>
+      <ion-item>
+        <ion-label position="floating">Username/Email</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+      <ion-button expand="block">Login</ion-button>
+      <p>New user? <a href="#">Sign up</a></p>
+    </div>
+  </div>
+</ion-content>
