@@ -1,18 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-import { IonicModule } from '@ionic/angular';
-
-import { LoginPageRoutingModule } from './login-routing.module';
+import { FormsModule } from '@angular/forms'; // For form handling (optional)
+import { IonicModule } from '@ionic/angular'; // Import IonicModule
 import { LoginPage } from './login.page';
 
 @NgModule({
   imports: [
     CommonModule,
-    FormsModule,
-    IonicModule,
-    LoginPageRoutingModule
+    FormsModule, // Add if necessary
+    IonicModule // Import IonicModule here
   ],
-  declarations: [LoginPage]
+  declarations: [LoginPage],
+  exports: [LoginPage] // If you intend to use LoginPage in other components
 })
-export class LoginPageModule {}
+export class LoginModule { }

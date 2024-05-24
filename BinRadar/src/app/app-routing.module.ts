@@ -1,20 +1,16 @@
 import { NgModule } from '@angular/core';
-import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
+import { LoginPage, SignupPage } from './pages'; // Import your pages
 
 const routes: Routes = [
-  { path: '', redirectTo: 'login', pathMatch: 'full' },
-  { path: 'login', loadChildren: () => import('./login/login.module').then(m => m.LoginPageModule) },
-  { path: 'signup', loadChildren: () => import('./signup/signup.module').then(m => m.SignupPageModule) },
-  {
-    path: 'signup',
-    loadChildren: () => import('./signup/signup.module').then( m => m.SignupPageModule)
-  }
+  { path: '', redirectTo: 'login', pathMatch: 'full' }, // Redirect root path to login
+  { path: 'login', component: LoginPage },
+  { path: 'signup', component: SignupPage },
+  // ... (Add other routes here)
 ];
 
 @NgModule({
-  imports: [
-    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
-  ],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
