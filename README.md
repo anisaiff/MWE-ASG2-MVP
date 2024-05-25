@@ -28,7 +28,7 @@
 ## Installation
 
 **Clone the repository:**
-`git clone https://`
+`git clone[ https://`](https://github.com/anisaiff/MWE-ASG2-MVP.git)`
 
 ## Usage
 
