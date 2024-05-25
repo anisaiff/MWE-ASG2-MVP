@@ -1,8 +1,5 @@
-// src/app/login/login.page.ts
-
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-login',
@@ -10,17 +7,16 @@ import { NavController } from '@ionic/angular';
   styleUrls: ['./login.page.scss'],
 })
 export class LoginPage {
-  username: string = ''; // Initialize username property
-  password: string = ''; // Initialize password property
+  username: string = '';
+  password: string = '';
 
-  constructor(private navCtrl: NavController, private router: Router) {}
+  constructor(private router: Router) {}
 
   login() {
     // Perform your authentication logic here
-    // For example, checking hardcoded credentials (for demonstration purposes)
     if (this.username === 'user' && this.password === 'password') {
       // Navigate to the home page
-      this.router.navigate(['/home.page.html']);
+      this.router.navigate(['/home']);
     } else {
       // Handle invalid credentials
       console.log('Invalid credentials');
@@ -28,6 +24,6 @@ export class LoginPage {
   }
 
   goToSignUp() {
-    this.router.navigateByUrl('/signup');
+    this.router.navigate(['/signup']);
   }
 }
