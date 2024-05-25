@@ -1,42 +1,39 @@
-
+/* login.page.scss */
 .login-container {
-    text-align: center;
-    margin-top: 50px;
-  }
-  
-  h1 {
-    color: #FFFFFF;
-    background-color: #8B4513;
-    padding: 20px;
-  }
-  
-  .login-box {
-    background-color: #90EE90;
-    padding: 20px;
-    border-radius: 10px;
-    display: inline-block;
-  }
-  
-  ion-icon {
-    font-size: 50px;
-    color: #000;
-  }
-  
-  ion-item {
-    margin: 10px 0;
-  }
-  
-  ion-button {
-    margin-top: 20px;
-    --background: #000;
-    --color: #fff;
-  }
-  
-  p {
-    margin-top: 20px;
-  }
-  
-  a {
-    color: #0000FF;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #f8f9fa;
+}
+
+.login-box {
+  width: 300px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+ion-item {
+  margin-bottom: 15px;
+}
+
+ion-button {
+  width: 100%;
+}
+
+p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+p a {
+  color: #007bff;
+  text-decoration: none;
+}
